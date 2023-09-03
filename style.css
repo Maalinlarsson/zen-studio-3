@@ -99,14 +99,23 @@ h1, h2, h3, h4, h5, h6, p, a {
 .bg-featured            { background-color:#018ca2;        }
 
 .text-featured          { color: #F59186;                  }
+.text-lightbrown        { color: #AE9A81;                  }
+.underline              { text-decoration: underline;        }
 
-.text-lg                { font-size: 4.5rem;                 }
-.text-xl                { font-size: 6rem;                   }
+.text-lg                { font-size: 3.5rem;                 }
+.text-xl                { font-size: 4.5rem;                 }
 .text-xxl               { font-size: 8.5rem;                 }
+.text-bold              { font-weight: bold;                 }
 
 .left                   { text-align: left;                  }
 .center                 { text-align: center;                }
 .right                  { text-align: right;                 }
+
+.text-lato { 
+  font-family: 'Lato', sans-serif; 
+  font-weight: 300;  
+  color: #e37165;
+}
 
 /*---------------- Typography styles ----------------*/
 body {
@@ -127,9 +136,12 @@ h3 { font-size: 2rem;     }
 
 p {
   line-height: 1.4;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.8rem;
 }
+
+ul { margin-left: 1rem; }
+li { padding-left: 0.5rem; }
 
 h1:last-child,
 h2:last-child,
@@ -141,6 +153,11 @@ p:last-child {
   margin-bottom: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .button {
   border: 1px solid #F59186;
   border-radius: 2rem;
@@ -148,6 +165,7 @@ p:last-child {
   padding: 0.5rem 1.5rem;
   display: inline-block;
 }
+
 
 /*---------------- Images and background images ----------------*/
 .bg-image {
@@ -157,7 +175,12 @@ p:last-child {
 }
 
 .bg-stone  { background-image: url('/images/stone.png');             }
-.bg-leaves { background-image: url('/images/leaves-light.png');      }
+
+.bg-leaves { 
+  background-image: url('/images/leaves-light.png');      
+  background-position: 50% 31%;
+}
+
 .bg-venue  { background-image: url('/images/zen-studio-3.jpg');      }
 .bg-map    { background-image: url('/images/light-colored-map.png'); }
 
@@ -171,4 +194,8 @@ p:last-child {
   border-top-right-radius: 20rem;
 }
 
-/*---------------- Footer styles ----------------*/
+/*---------------- Header and footer styles ----------------*/
+footer { 
+  padding-bottom: 0.5rem;
+  color: rgb(125,120,120);
+}
